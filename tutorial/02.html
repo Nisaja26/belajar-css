@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="d:\belajar-css\tutorial\style-css\style-02.css">
+      <title>CSS-Eksternal-nissa</title>
+    </head>
+    <header>
+        <h1>Nissa Ika Rachmawati</h1>
+        <p>Seorang Taruni SMKN 2</p>
+        <hr>
+    </header>
+    <body>
+        <!-- memberikan warna pada border -->
+        <b><p>Border Warna</p></b> 
+        <h2 style="border: 2px solid rgb(205, 106, 122);">Aku memiliki banyak Hobi</h2><br>
+        <h2 style="border: 2px solid rgb(225, 163, 225);">Saya menyukai warna ungu</h2><br>
+        <h2 style="border: 2px solid rgb(98, 49, 98);">Saya Menyukai Kucing</h2><br>
+        <br>
+        <!-- macam-macam warna -->
+        <b><p>Teman Dekat</p></b>
+        <h1 style="background-color:rgb(255, 192, 203);">Tiara</h1>
+        <h1 style="background-color:#ee82ee;">Maysya</h1>
+        <h1 style="background-color:hsl(300, 47%, 75%);">Nabila</h1>
+        <br>
+        <!-- warna background dan teks -->
+        <b><p>Hobi ku</p></b>
+        <h1 style="background-color:rgba(255, 99, 71, 0.5);">Bernyanyi</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">Main Basket</h1>
+        <br>
+        <b><p>Dengan Menggunakkan Nuansa abu-abu</p></b>
+        <h2 style="background-color:rgb(60, 60, 60);">Nissa Ika Rachmawati</h2>
+        <h2 style="background-color:rgb(90, 90, 90);">Nisaja26</h2>
+        <h2 style="background-color:rgb(120, 120, 120);">Nissa Tv Official</h2>
+        <h2 style="background-color:rgb(180, 180, 180);">NissaTV</h2>
+        <h2 style="background-color:rgb(210, 210, 210);">Nissa26</h2>
+        <h2 style="background-color:rgb(240, 240, 240);">Nissa IR</h2>
+        <br>
+        <!-- Make transparent colors with RGBA -->
+        <h2 style="background-color:rgba(255, 99, 71, 0);">Nissa Ika Rachmawati</h2>
+        <h2 style="background-color:rgba(255, 99, 71, 0.2);">Nisaja26</h2>
+        <h2 style="background-color:rgba(255, 99, 71, 0.4);">Nissatv</h2>
+        <h2 style="background-color:rgba(255, 99, 71, 0.6);">Nissa TV Official</h2>
+        <h2 style="background-color:rgba(255, 99, 71, 0.8);">Software enggineering</h2>
+        <h2 style="background-color:rgba(255, 99, 71, 1);">Smkn 2 Subang</h2>
+    </body>
+    <footer>
+        <p><b> © <span id="currentYear"></span>Nissa Ika Rachmawati</b></p>
+     </footer>
+     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const yearSpan = document.getElementById("currentYear");
+            const currentYear = new Date().getFullYear();
+            yearSpan.textContent = currentYear;
+        });
+    </script>
+</html>
