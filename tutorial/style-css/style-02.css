@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(246, 237, 223);
+    margin: 0;
+    padding: 0;
+}
+header {
+    font-family: 'Georgia', serif; /* jenis huruf yang akan digunakan georgia adalah nama font utama */
+    text-transform: uppercase; /* mengubah semua huruf dalam teks menjadi huruf besar */
+    letter-spacing: 2px; /* jarak antara huruf */
+    text-shadow: 5px 5px 4px rgba(77, 68, 68, 0.5); /* menambahkan bayangan pada teks. 5px 5px adalah offset bayangan secara horizontal dan vertikal, 4px adalah tingkat blur, dan rgba(0, 0, 0, 0.5) menentukan warna bayangan hitam dengan transparansi 50%. Bayangan ini memberikan efek 3D */  
+    color: rgb(15, 13, 13);
+    text-align: center;
+    background-color: rgb(242, 229, 208);
+}
+h1 {
+    color: rgb(132, 32, 132);
+    text-align: center;
+    padding: 0;
+}
+h2 {
+    text-align: center;
+}
+p {
+    font-size: 30px;
+    color: black;
+}
+footer {
+    text-align: center;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 30vh;
+}
