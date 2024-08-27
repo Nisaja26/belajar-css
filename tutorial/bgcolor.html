@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>CSS-background-color-Nissa</title>
+       <style>
+          h1 {
+          font-family: 'Georgia', serif; /* jenis huruf yang akan digunakan georgia adalah nama font utama */
+          text-transform: uppercase; /* mengubah semua huruf dalam teks menjadi huruf besar */
+          letter-spacing: 2px; /* jarak antara huruf */
+          text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5); /* menambahkan bayangan pada teks. 5px 5px adalah offset bayangan secara horizontal dan vertikal, 4px adalah tingkat blur, dan rgba(0, 0, 0, 0.5) menentukan warna bayangan hitam dengan transparansi 50%. Bayangan ini memberikan efek 3D */  
+          color: rgb(15, 13, 13);
+          text-align: center;
+           }
+            body {
+            background-color: rgb(243, 197, 246);
+            }
+
+            div {
+            background-color: #cbe6ef;
+            }
+
+            p {
+            background-color: rgb(205, 14, 14);
+            }
+
+            /* Properti ini opacitymenentukan opasitas/transparansi suatu elemen */
+            div.kesatu {
+            opacity: 0.1;
+            }
+            div.kedua {
+            opacity: 0.3;
+            }
+            div.ketiga {
+            opacity: 0.6;
+            }
+            div.nissa {
+            background: rgba(0, 128, 0, 0.1);
+            }
+            div.ika {
+            background: rgba(0, 128, 0, 0.3);
+            }
+            div.rachma {
+            background: rgba(0, 128, 0, 0.6); 
+            }
+  
+            p.footer {
+                background-color: black;
+                color: white;
+            }
+            footer {
+                text-align: center;
+                margin: auto;
+            }
+        </style>
+   </head>
+  <header> <h1>Nissa Ika Rachmawati</h1></header>
+    <body>
+   
+        <!-- style div -->
+        <div>
+          Saya beraada di jurusan RPL.
+          <p>Saya sedang berusaha belajar bahasa pemograman css</p>
+          Saat ini saya masih berada di kelas 11.
+        </div>
+        <br>
+
+        <!-- div class -->
+        <div class="kesatu">
+           <h2>Saya ingin menjadi pengusaha</h2>
+        </div>
+      
+        <div class="kedua">
+           <h2>Saya ingin menjadi programmer</h2>
+        </div>
+      
+        <div class="ketiga">
+          <h2>Saya ingin menjadi PNS</h2>
+        </div>
+        <br>
+
+        <!-- mengatur persen transparan -->
+        <div style="opacity:0.1;">
+            <h2>10% transparan</h2>
+          </div>
+          
+          <div style="opacity:0.3;">
+            <h2>30% transparan</h2>
+          </div>
+          
+          <div style="opacity:0.6;">
+            <h2>60% transparan</h2>
+        </div>
+
+        <br>
+        <!-- custom div -->
+        <div class="nissa">
+            <h2>10% Nissa</h2>
+          </div>
+          
+          <div class="ika">
+            <h2>30% Ika</h2>
+          </div>
+          
+          <div class="rachma">
+            <h2>60% Rachmawati</h2>
+        </div>
+    </body>
+    <footer>
+        <p class="footer"><b> © <span id="currentYear"></span>Nissa Ika Rachmawati</b></p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const yearSpan = document.getElementById("currentYear");
+            const currentYear = new Date().getFullYear();
+            yearSpan.textContent = currentYear;
+        });
+    </script>
+    
+</html>
