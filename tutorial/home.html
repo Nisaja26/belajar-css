@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Home-CSS-Nissa</title>
+    </head>
+    <style>
+        body {
+          background-color: rgb(248, 210, 216);
+        }
+        
+        h1 {
+          font-family: 'Georgia', serif; /* jenis huruf yang akan digunakan georgia adalah nama font utama */
+          text-transform: uppercase; /* mengubah semua huruf dalam teks menjadi huruf besar */
+          letter-spacing: 2px; /* jarak antara huruf */
+          text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5); /* menambahkan bayangan pada teks. 5px 5px adalah offset bayangan secara horizontal dan vertikal, 4px adalah tingkat blur, dan rgba(0, 0, 0, 0.5) menentukan warna bayangan hitam dengan transparansi 50%. Bayangan ini memberikan efek 3D */  
+          color: rgb(15, 13, 13);
+          text-align: center;
+        }
+        p {
+          font-family: verdana;
+        }
+        #para1 {
+        text-align: left;
+        color: red;
+        }
+        p.ket {
+       text-align: center;
+       color: rgb(21, 15, 8);
+       }
+       p.large {
+       font-size: 300%;
+       text-align: center;
+       /* penggabungan */
+       }
+       h2, h3 {
+      text-align: right;
+      color: rgb(120, 24, 120);
+       }
+        footer {
+            text-align: center;
+            margin-right: 25px;
+            margin-left: 25px;
+            margin-top: 30vh;
+        }
+    </style>
+    <header>
+        <h1>Nissa Ika Rachmawati</h1>
+        <p class="ket">Seorang Taruni SMKN 2 Subang.</p>
+        <hr>
+    </header>
+    <body>
+
+        <!--Pemilih ID  -->
+        <p id="para1">Peliharaan!</p>
+        <p>Kucing.</p>
+        <i><p class="center large">Software Engineering</p></i> 
+        <h2>Hobi!</h2>
+        <h3>Bernyanyi!</h3>
+
+    </body>
+    <footer>
+       <p><b> © <span id="currentYear"></span>Nissa Ika Rachmawati</b></p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const yearSpan = document.getElementById("currentYear");
+            const currentYear = new Date().getFullYear();
+            yearSpan.textContent = currentYear;
+        });
+    </script>
+</html>
