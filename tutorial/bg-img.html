@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Gambar-latar-belakang-Nissa</title>
+       <style>
+        body {
+          margin: auto;  
+          background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBG2HaYktAhnseWPuVqPrLmf2WVy01WV4oKw&s");
+          /* no repeat= agar gambar tak berulang */
+          background-repeat: no-repeat;
+          background-size: 100%;
+         
+        }
+        header {
+          /* tipe text */
+          font-family: 'Courier New', Courier, monospace;
+          text-transform: uppercase; /* mengubah semua huruf dalam teks menjadi huruf besar */
+          letter-spacing: 4px; /* jarak antara huruf */
+          text-shadow: 4px 3px 3px rgba(37, 35, 35, 0.5); /* menambahkan bayangan pada teks. 5px 5px adalah offset bayangan secara horizontal dan vertikal, 4px adalah tingkat blur, dan rgba(0, 0, 0, 0.5) menentukan warna bayangan hitam dengan transparansi 50%. Bayangan ini memberikan efek 3D */  
+          color: rgb(55, 10, 67);
+          text-align: center;
+        }
+        /* background untuk element tertentu */
+        h1 {
+        background-image: url("https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg");
+        }
+        div.repeat {
+            background-image: url("https://res.cloudinary.com/gimmersta-wallpaper/image/upload/c_fill,f_auto,fl_progressive,q_auto,h_1200/v1681281248/articles/R19704_closeup1.jpg");
+            background-repeat: repeat-x; /* Gambar di ulang dari kiri ke kanan */
+        }
+        div.no-repeat {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQub0NlGcMWjuDzvqH6iwi-ZT6cYD71fa1AuQ&s");
+            background-repeat: no-repeat; 
+            color: white;
+        }
+        div.posisi {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWdclxeQUGsXkRtKawKIFxVUZ-OP2ABlZKBw&s");
+            background-repeat: no-repeat;
+            background-position: right top; /* Menentukan posisi gambar latar belakang berada di tengah elemen. */
+            margin-right: 200px; /* margin-right: Menentukan jarak margin di sisi kanan elemen */
+        }
+        div.lampiran {
+            background-image: url("https://www.google.com/imgres?q=red&imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fthumbnails%2F029%2F497%2F627%2Fsmall%2Frose-close-up-background-design-photo.jpg&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-photos%2Fred-color&docid=Hlvg-dktnSO7rM&tbnid=RbLuzzGO-WVilM&vet=12ahUKEwiIx8-V4ZaIAxUz4zgGHa1bJCQ4ChAzegQIdRAA..i&w=271&h=200&hcb=2&ved=2ahUKEwiIx8-V4ZaIAxUz4zgGHa1bJCQ4ChAzegQIdRAA&safe=active&ssui=on");
+            background-repeat: no-repeat;
+            background-position: right top;
+            margin-right: 200px;
+            background-attachment: fixed;
+        }
+        div.scroll{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu2SoEyGvL63mTygSjOk2ERnrExv638pbo9w&s");
+            background-repeat: no-repeat;
+            background-position: right top;
+            margin-right: 200px;
+            background-attachment: scroll;
+        }
+    </style>
+    </head>
+    <header>
+        <h1>Nissa Ika Rachmawati</h1>
+    </header>
+    <body>
+        <p>Belajar CSS menyenagnkan kita dapat merubah  dan memperindah  tampilan sesuai dengan selera</p>
+        
+        <div class="repeat">
+        <h2>Pengulangan Gambar Latar Belakang CSS</h2>
+        <p>repeat-x: Gambar latar belakang akan diulang sepanjang sumbu horizontal (sumbu x), artinya gambar akan diulang dari kiri ke kanan di dalam elemen, tetapi tidak akan diulang dari atas ke bawah. </p>
+        </div>
+        <br>
+        <div class="no-repeat">
+            <h2>Latar belakang CSS-ulangi: tidak-ulangi</h2>
+            <p>no-repeat: Gambar latar belakang hanya ditampilkan sekali di posisi yang ditentukan dan tidak diulang ke seluruh elemen.</p>
+            <p> Jika gambar lebih kecil dari ukuran elemen, maka area yang tidak tertutup oleh gambar akan tetap kosong atau menunjukkan warna latar belakang elemen itu</p>
+        </div>
+        <br>
+        <div class="posisi">
+            <h2>Latar belakang CSS-posisi</h2>
+            <p>Properti ini background-positiondigunakan untuk menentukan posisi gambar latar belakang.</p>
+        </div> 
+        <br>
+        <div class="lampiran">
+            <h2>Latar belakang CSS-lampiran</h2>
+            <p>Properti ini background-attachmentmenentukan apakah gambar latar belakang harus digulir atau tetap (tidak akan digulir bersama bagian halaman lainnya)</p>
+        </div> 
+        <br>
+        <div class="scroll">
+            <h2>gambar latar belakang bergulir bersama dengan sisa halaman</h2>
+            <p>background-attachment: scroll; adalah nilai default dari properti background-attachment. Ketika Anda menggunakan nilai ini, latar belakang elemen akan digulir bersamaan dengan konten elemen.</p>
+        </div>
+        <br>
+    </body>
+</html>
