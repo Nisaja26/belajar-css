@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Border-CSS-NIssa</title>
+       <style>
+        h1 {
+          font-family: 'Georgia', serif; /* jenis huruf yang akan digunakan georgia adalah nama font utama */
+          text-transform: uppercase; /* mengubah semua huruf dalam teks menjadi huruf besar */
+          letter-spacing: 2px; /* jarak antara huruf */
+          text-shadow: 10px 8px 6px rgba(0, 0, 0, 0.5); /* menambahkan bayangan pada teks. 5px 5px adalah offset bayangan secara horizontal dan vertikal, 4px adalah tingkat blur, dan rgba(0, 0, 0, 0.5) menentukan warna bayangan hitam dengan transparansi 50%. Bayangan ini memberikan efek 3D */  
+          color: rgb(34, 9, 9);
+          text-align: center;
+        }
+        body {
+            margin: auto;
+            background-color: rgb(179, 156, 119);
+        }
+        div.dotted {
+            border-style: dotted;
+        }
+        p.dashed {
+            border-style: dashed;
+        }
+        p.solid {
+            border-style: solid;
+        }
+        p.double {
+            border-style: double;
+        }
+        p.groove {
+            border-style: groove;
+        }
+        p.ridge {
+            border-style: ridge;
+        }
+        p.inset {
+            border-style: inset;
+        }
+        p.outset {
+            border-style: outset;
+        }
+        p.none {
+            border-style: none;
+        }
+        p.hidden {
+            border-style: hidden;
+        }
+        p.mix {
+            border-style: dotted dashed solid double;
+            border-width: 2px; 
+        }
+       </style>
+    </head>
+    <header>
+        <h1>Nissa Ika Rachmawati</h1>
+    </header>
+    
+    <body> 
+       <h1>Batas CSS</h1>
+       <div class="dotted">
+        <p> batasnya tampil sebagai garis putus-putus.</p>
+       </div>
+       <br>
+       <p class="dashed">garis batas akan ditampilkan sebagai serangkaian garis putus-putus.</p>
+       <br>
+       <p class="solid">Ini adalah deklarasi CSS yang menentukan gaya garis batas elemen. Dengan nilai solid, batas elemen akan ditampilkan sebagai garis penuh tanpa putus-putus atau titik-titik.</p>
+       <br>
+       <p class="double">Ini adalah deklarasi CSS yang menentukan gaya garis batas elemen. Dengan nilai double, batas elemen akan ditampilkan sebagai dua garis paralel yang dipisahkan oleh ruang di antara mereka.</p>
+       <br>
+       <p class="groove">Ini adalah deklarasi CSS yang menentukan gaya garis batas elemen. Dengan nilai groove, batas elemen akan tampil dengan efek visual yang seolah-olah tertekan atau membentuk alur ke dalam elemen tersebut.</p>
+       <br>
+       <p class="ridge">Ini adalah deklarasi CSS yang menentukan gaya garis batas elemen. Dengan nilai ridge, batas elemen akan memiliki efek visual yang membuatnya terlihat seperti menonjol atau terangkat dari latar belakang, membentuk punggung atau tonjolan.</p> 
+       <br>
+       <p class="inset"> Ini adalah deklarasi CSS yang menentukan gaya garis batas elemen. Dengan nilai inset, batas elemen akan memiliki efek visual yang membuatnya tampak terbenam atau tertekan ke dalam permukaan elemen.</p> 
+       <br>
+       <p class="outset"> Ini adalah deklarasi CSS yang menentukan gaya garis batas elemen. Dengan nilai outset, batas elemen akan memiliki efek visual yang membuatnya tampak menonjol atau terangkat dari permukaan elemen.</p>
+       <br>
+       <p class="none">menetapkan bahwa batas elemen tidak akan ditampilkan sama sekali.</p>
+       <br>
+       <p class="hidden">Ini adalah deklarasi CSS yang mengatur gaya border elemen yang dipilih. Nilai hidden pada properti border-style membuat border menjadi sepenuhnya tidak terlihat (hidden). Namun, ini berbeda dari border: none; yang sepenuhnya menghilangkan border dari elemen, karena hidden lebih spesifik untuk situasi di mana border mungkin masih ada, tetapi tidak terlihat.</p>
+       <br>
+       <p class="mix">: Ini adalah deklarasi yang mengatur gaya border. Nilai-nilai ini diterapkan ke sisi-sisi border elemen.</p>
+
+    </body>
+</html>
