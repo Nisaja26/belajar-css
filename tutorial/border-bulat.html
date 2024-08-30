@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Border-bulat-CSS-Nissa</title>
+        <style>    
+         h1 {
+          font-family: 'Georgia', serif; /* jenis huruf yang akan digunakan georgia adalah nama font utama */
+          text-transform: uppercase; /* mengubah semua huruf dalam teks menjadi huruf besar */
+          letter-spacing: 2px; /* jarak antara huruf */
+          text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5); /* menambahkan bayangan pada teks. 5px 5px adalah offset bayangan secara horizontal dan vertikal, 4px adalah tingkat blur, dan rgba(0, 0, 0, 0.5) menentukan warna bayangan hitam dengan transparansi 50%. Bayangan ini memberikan efek 3D */  
+          color: rgb(15, 13, 13);
+          text-align: center;
+        }                          
+         p.normal {
+         border: 2px solid rgb(236, 181, 253);
+         padding: 5px;
+         text-align: center;
+         }
+
+         p.round1 {
+         border: 2px solid pink;
+         border-radius: 5px;
+         padding: 5px;
+         text-align: center;
+         }
+
+         p.round2 {
+         border: 2px solid rgb(209, 114, 130);
+         border-radius: 8px;
+         padding: 5px;
+         text-align: center;
+         }
+
+         p.round3 {
+         border: 2px solid rgb(197, 90, 197);
+         border-radius: 12px;
+         padding: 5px;
+         text-align: center;
+         }
+         footer {
+           text-align: center;
+           margin: auto;
+        }
+        </style>
+    </head> 
+    <header><h1>Nissa Ika Rachmawati</h1></header>
+    <body>
+        <p class="normal">Nissa Ika Rachmawati</p>
+        <p class="round1">Tiara</p>
+        <p class="round2">Nabila</p>
+        <p class="round3">Maysya</p>
+
+    </body>
+    <footer>
+        <!-- "currentYear" adalah tempat dinamis untuk menampilkan tahun saat ini. ID digunakan untuk mengidentifikasi elemen ini dalam JavaScript. -->
+        <p><b> © <span id="currentYear"></span>Nissa Ika Rachmawati</b></p> 
+    </footer>
+    <!--  Baris ini mengubah teks di dalam elemen yearSpan untuk menampilkan tahun saat Ini secara otomatis  -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const yearSpan = document.getElementById("currentYear");
+            const currentYear = new Date().getFullYear();
+            yearSpan.textContent = currentYear;
+        });
+    </script>
+</html>
