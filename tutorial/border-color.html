@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Border-color-CSS-Nissa</title>
+      <style>
+        body {
+          background-color: rgb(200, 243, 229);
+        }
+        h1 {
+          font-family: 'Georgia', serif; /* jenis huruf yang akan digunakan georgia adalah nama font utama */
+          text-transform: uppercase; /* mengubah semua huruf dalam teks menjadi huruf besar */
+          letter-spacing: 2px; /* jarak antara huruf */
+          text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5); /* menambahkan bayangan pada teks. 5px 5px adalah offset bayangan secara horizontal dan vertikal, 4px adalah tingkat blur, dan rgba(0, 0, 0, 0.5) menentukan warna bayangan hitam dengan transparansi 50%. Bayangan ini memberikan efek 3D */  
+          color: rgb(15, 13, 13);
+          text-align: center;
+        }
+        p.one {
+        border-style: solid;
+        border-color: rgb(206, 136, 136) rgb(56, 148, 56) rgb(177, 177, 228) rgb(49, 49, 24); /* red top, green right, blue bottom and yellow left */
+        }
+        div.individual {
+          border-top-style: dotted;
+          border-right-style: solid;
+          border-bottom-style: dotted;
+          border-left-style: solid;
+        }
+        footer {
+           text-align: center;
+           margin: auto;
+        }
+      </style>
+    </head>
+    <header><h1>Nissa Ika Rachmawati</h1></header>
+  <body>
+    <h1>Warna Sisi Spesifik</h1>
+    <p class="one">Warna bisa di campur</p>
+    <br>
+    <h1>Sisi Batas CSS</h1>
+    <br>
+    <div class="individual">
+    <p>2 style border.</p>
+    </div>
+  </body>
+  <footer>
+    <p><b> © <span id="currentYear"></span>Nissa Ika Rachmawati</b></p>
+ </footer>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const yearSpan = document.getElementById("currentYear");
+      const currentYear = new Date().getFullYear();
+      yearSpan.textContent = currentYear;
+  });
+  </script>
+</html>
