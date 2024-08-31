@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Margin-CSS-Nissa</title>
+       <style>
+         h1 {
+          font-family: 'Georgia', serif; /* jenis huruf yang akan digunakan georgia adalah nama font utama */
+          text-transform: uppercase; /* mengubah semua huruf dalam teks menjadi huruf besar */
+          letter-spacing: 2px; /* jarak antara huruf */
+          text-shadow: 5px 5px 4px rgb(214, 166, 214); /* menambahkan bayangan pada teks. 5px 5px adalah offset bayangan secara horizontal dan vertikal, 4px adalah tingkat blur, dan rgba(0, 0, 0, 0.5) menentukan warna bayangan hitam dengan transparansi 50%. Bayangan ini memberikan efek 3D */  
+          color: rgb(68, 31, 68);
+          text-align: center;
+        }
+        div {
+        border: 1px solid black;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-right: 25px;
+        margin-left: 15px;
+        background-color: plum;
+        }
+        div.disatukan {
+        border: 1px solid black;
+        margin: 25px 50px 75px 100px;
+        background-color: plum;
+        }
+        div.otomatis {
+        width: 300px;
+        margin: auto;
+        border: 5px solid rgb(247, 51, 84);
+        }
+        footer {
+           text-align: center;
+           margin: auto;
+        }
+        p.ex1 {
+        margin-left: inherit;
+        }
+        div.warisan {
+        border: 3px solid rgb(245, 47, 80);
+        margin-left: 100px;
+        }
+       </style>
+    </head>
+     
+    <header><h1>Nissa Ika Rachmawati</h1></header> 
+
+    <body>
+    <h1>Margin CSS</h1>
+    <br> 
+    <h2>Beberapa Contoh Margin</h2>
+    <br> 
+    <div>Margin mengatur sisi kanan kiri atas bawah</div>
+    <hr>
+    <br>
+    <h2>Margin - Properti Singkatan</h2>
+    <div class="disatukan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolor atque pariatur consequuntur tempora voluptatum doloremque ipsa fugit hic sint enim ad recusandae doloribus explicabo, libero sequi sit quae molestias. </div>
+    <hr>
+    <br>
+    <h2>Margin Otomatis</h2>
+    <div class="otomatis">Jika margin dengan nilai otomatis</div>
+    <hr>
+    <br>
+    <h2>Nilai Warisan</h2>
+    <div class="warisan"><p class="ex1">Nilai inherit untuk properti CSS margin-left berarti margin kiri elemen tersebut akan diwarisi dari elemen induknya. Jadi, elemen <p> dengan kelas ex1 akan menggunakan nilai margin-left yang sama dengan nilai margin-left dari elemen induknya..</p></div>
+    <br>
+    <hr>
+    </body>
+    <footer><p><b> © <span id="currentYear"></span>Nissa Ika Rachmawati</b></p></footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const yearSpan = document.getElementById("currentYear");
+            const currentYear = new Date().getFullYear();
+            yearSpan.textContent = currentYear;
+        });
+    </script>
+</html>
