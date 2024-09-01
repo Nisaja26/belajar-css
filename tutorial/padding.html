@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Padding-CSS-Nissa</title>
+    </head>
+    <style>
+        h1 {
+          font-family: 'Georgia', serif; /* jenis huruf yang akan digunakan georgia adalah nama font utama */
+          text-transform: uppercase; /* mengubah semua huruf dalam teks menjadi huruf besar */
+          letter-spacing: 2px; /* jarak antara huruf */
+          text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5); /* menambahkan bayangan pada teks. 5px 5px adalah offset bayangan secara horizontal dan vertikal, 4px adalah tingkat blur, dan rgba(0, 0, 0, 0.5) menentukan warna bayangan hitam dengan transparansi 50%. Bayangan ini memberikan efek 3D */  
+          color: rgb(15, 13, 13);
+          text-align: center;
+        }
+        h2 {
+          letter-spacing: 1px;
+          text-transform: unset;
+          text-decoration: underline;
+        }
+        div {
+          border: 1px solid black;
+          background-color: rgb(209, 238, 247);
+          padding-top: 50px;
+          padding-right: 30px;
+          padding-bottom: 50px;
+          padding-left: 80px;
+        }
+        footer {
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+    <header><h1>Nissa Ika Rachmawati</h1></header>
+  <body>
+    <br>
+    <h2>Belajar padding</h2>
+
+    <div>Padding adalah fitur penting dalam CSS yang membantu dalam perancangan tata letak web dengan memberi ruang internal di sekitar konten elemen, meningkatkan estetika dan keterbacaan halaman web.</div>
+    
+  </body>
+   <footer>
+    <p><b> © <span id="currentYear"></span>Nissa Ika Rachmawati</b></p>
+ </footer>
+ <script>
+     document.addEventListener("DOMContentLoaded", function() {
+         const yearSpan = document.getElementById("currentYear");
+         const currentYear = new Date().getFullYear();
+         yearSpan.textContent = currentYear;
+     });
+ </script>
+</html>
