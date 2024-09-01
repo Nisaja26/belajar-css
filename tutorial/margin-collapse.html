@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>margin-collpase-CSS</title>
+        <style>
+          h1 {
+          margin: 0 0 50px 0;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+          text-transform: initial;
+          letter-spacing: 4px; /* jarak antara huruf */
+          text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5); /* menambahkan bayangan pada teks. 5px 5px adalah offset bayangan secara horizontal dan vertikal, 4px adalah tingkat blur, dan rgba(0, 0, 0, 0.5) menentukan warna bayangan hitam dengan transparansi 50%. Bayangan ini memberikan efek 3D */  
+          color: rgb(15, 13, 13);
+          text-align: center;
+          }
+          body {
+            background-color: rgb(228, 228, 183);
+          }
+          h2 {
+            /*  [top] [right] [bottom] [left] */
+           margin: 50px 0 0 0; 
+           text-align: center;
+           text-decoration: line-through; /* memberikan garis pada teks */
+           letter-spacing: 3px;
+           text-transform: uppercase; /* huruf besar */
+          }
+          footer {
+           text-align: center;
+           margin: auto;
+          }
+        </style>
+    </head>
+    <header><h1>Nissa Ika Rachmawati</h1></header>
+    <hr>
+    <body>
+        <h2>Mengatur Margin</h2>
+        
+    </body>
+    <footer>
+        <p><b> © <span id="currentYear"></span>Nissa Ika Rachmawati</b></p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const yearSpan = document.getElementById("currentYear");
+            const currentYear = new Date().getFullYear();
+            yearSpan.textContent = currentYear;
+        });
+    </script>
+</html>
