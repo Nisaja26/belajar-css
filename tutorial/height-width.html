@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Height-Width-CSS-nissa</title>
+      <style>
+        header {
+            background-color: rgb(233, 233, 176);
+            padding: 20px;
+        }
+        h1 {
+          font-family: 'Georgia', serif; /* jenis huruf yang akan digunakan georgia adalah nama font utama */
+          text-transform: uppercase; /* mengubah semua huruf dalam teks menjadi huruf besar */
+          letter-spacing: 2px; /* jarak antara huruf */
+          text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5); /* menambahkan bayangan pada teks. 5px 5px adalah offset bayangan secara horizontal dan vertikal, 4px adalah tingkat blur, dan rgba(0, 0, 0, 0.5) menentukan warna bayangan hitam dengan transparansi 50%. Bayangan ini memberikan efek 3D */  
+          color: rgb(15, 13, 13);
+          text-align: center;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+       div {
+          height: 40px;
+          width: 50%;
+          background-color: rgb(236, 228, 205);
+          color: brown;
+          margin: 20px auto; /* Jarak dengan elemen lain dan posisi tengah */
+          padding: 20px; /* Jarak isi dari pinggir elemen */
+          border: 2px solid #9e9a9a; /* Tebal garis, gaya, dan warna */
+          border-radius: 20px; /* Sudut melengkung */
+          margin-top: 50px;
+        }
+
+        .kedua {
+        height: 70px;
+        width: 300px;
+        background-color: rgb(223, 189, 189);
+        color: whitesmoke;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 10vh;
+            background-color:  rgb(233, 233, 176);
+            padding: 20px;
+        }
+        
+      </style>
+
+    </head>
+    <header><h1>Nissa Ika Rachmawati</h1></header>
+    <body>
+        <br>
+        <!-- Mengatur tinggi dan lebar elemen <div>: -->
+        <h2>Tinggi Dan Lebar</h2>
+        <div>Saya suka kucing, karena menggenmaskan dan lucu. memelihara kucing bisa menemani kesepian saya</div>
+        <br>
+        <!-- Mengatur tinggi dan lebar elemen <div> lainnya: -->
+        <h2>Mengatur tinggi dan lebar lainnya </h2>
+        <div class="kedua">Saya suka berteman dengan banyak orang karena dengan berteman bisa menambah banyak pengalaman dan wawasan</div>   
+    </body>
+    <footer>
+        <p><b> © <span id="currentYear"></span>Nissa Ika Rachmawati</b></p>
+     </footer>
+     <script>
+         document.addEventListener("DOMContentLoaded", function() {
+             const yearSpan = document.getElementById("currentYear");
+             const currentYear = new Date().getFullYear();
+             yearSpan.textContent = currentYear;
+         });
+     </script>
+</html>
