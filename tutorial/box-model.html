@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Box-Model-CSS-Nissa</title>
+       <style>
+         h1 {
+          font-family: 'Georgia', serif; /* jenis huruf yang akan digunakan georgia adalah nama font utama */
+          text-transform: uppercase; /* mengubah semua huruf dalam teks menjadi huruf besar */
+          letter-spacing: 2px; /* jarak antara huruf */
+          text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5); /* menambahkan bayangan pada teks. 5px 5px adalah offset bayangan secara horizontal dan vertikal, 4px adalah tingkat blur, dan rgba(0, 0, 0, 0.5) menentukan warna bayangan hitam dengan transparansi 50%. Bayangan ini memberikan efek 3D */  
+          color: rgb(15, 13, 13);
+          text-align: center;
+        }
+
+        body {
+            background-color: rgb(131, 117, 145);
+        }
+
+        p {
+            color: aliceblue;
+        }
+
+        div {
+        background-color: rgb(201, 194, 194);
+        width: 300px;
+        border: 15px solid rgb(27, 49, 54);
+        padding: 30px;
+        margin: 20px;
+        }
+
+        .foto {
+        width: 320px;
+        height: 50px;
+        padding: 10px;
+        border: 3px solid rgb(27, 49, 54);
+        margin: 0;
+        }
+
+        h2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30-px;
+        }
+
+        footer {
+            text-align: center;
+            margin: auto;
+        }
+
+       </style>
+    </head>
+    <header><h1>Nissa Ika Rachmawati</h1></header>
+    <hr>
+    <body>
+        <!-- Contoh Demonstrasi model kotak: -->
+        <br>
+        <h2>CSS Box Model</h2>
+        <br>
+        <p>konsep fundamental dalam desain layout web yang menggambarkan bagaimana elemen HTML ditempatkan dan berinteraksi dengan ruang di halaman web.</p>
+        <br>
+        <div>1. Content (Isi)
+            Bagian ini adalah area di mana teks, gambar, atau konten elemen berada.
+            Properti yang memengaruhi: width, height.<br>
+            2. Padding (Ruang Dalam)
+            Ruang di antara konten dan border elemen. Padding bersifat transparan, jadi hanya menambah jarak di dalam elemen tanpa memengaruhi elemen lain.
+            Properti yang memengaruhi: padding, padding-top, padding-right, padding-bottom, padding-left.<br>
+            3. Border (Garis Tepi)
+            Garis yang mengelilingi elemen setelah padding. Border dapat diatur ketebalannya, warnanya, dan gaya garisnya.
+            Properti yang memengaruhi: border, border-width, border-style, border-color.<br>
+            4. Margin (Ruang Luar)
+            Ruang antara border elemen dan elemen lainnya. Margin juga transparan, dan tidak mempengaruhi konten di dalam elemen.
+            Properti yang memengaruhi: margin, margin-top, margin-right, margin-bottom, margin-left.
+        </div>
+        <br>
+        <!-- Elemen <div> ini akan memiliki lebar total 350px dan tinggi total 80px -->
+        <h2>Menambahkan gambar</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvlG-VPscn0oO-x2cuDZwC27Px7pN5UyddvyTJguDMLategOP8OGxSHFJBRK7swRk7Xi8&usqp=CAU"> 
+        <div class="foto">Saya suka bunga lavender, karena warnanya ungu</div>    
+
+    
+    </body>
+    <footer>
+        <p><b> © <span id="currentYear"></span>Nissa Ika Rachmawati</b></p>
+     </footer>
+     <script>
+         document.addEventListener("DOMContentLoaded", function() {
+             const yearSpan = document.getElementById("currentYear");
+             const currentYear = new Date().getFullYear();
+             yearSpan.textContent = currentYear;
+         });
+     </script>
+</html>
