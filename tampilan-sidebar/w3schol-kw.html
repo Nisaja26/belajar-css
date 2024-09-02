@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampilan sidebar CSS Outline</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Nissa Ika Rachmawati</h1>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="tampilan-sidebar/outline.html">Outline</a>
+        <a href="Width">Outline Width</a>
+        <a href="color">Outline color</a>
+        <a href="Shorthand">Outline Shorthand</a>
+        <a href="#offset">aoutline offset</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <h2>CSS Outline</h2>
+        <br>
+        <p>Ini adalah layout sederhana.</p>
+        <br>
+        <h3>Apa itu outline CSS?</h3>
+        <br>
+        <p>outline di CSS adalah properti yang digunakan untuk menggambar garis di sekitar elemen, tetapi berbeda dari border. outline biasanya digunakan untuk membuat penyorotan (highlight) pada elemen, misalnya ketika elemen tersebut difokuskan (focus) atau di-hover.</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <footer>
+            <p><b> © <span id="currentYear"></span>Nissa Ika Rachmawati</b></p>
+         </footer>
+         <script>
+             document.addEventListener("DOMContentLoaded", function() {
+                 const yearSpan = document.getElementById("currentYear");
+                 const currentYear = new Date().getFullYear();
+                 yearSpan.textContent = currentYear;
+             });
+         </script>
+    </div>
+
+</body>
+</html>

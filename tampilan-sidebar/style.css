@@ -1,0 +1,85 @@
+        /* General body styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(230, 221, 207);
+        }
+
+        /* Header styles */
+        .header {
+            background-color: rgb(240, 201, 240);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: rgb(99, 73, 77);
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .sidebar a {
+            display: block;
+            color: rgb(255, 255, 255);
+            padding: 15px;
+            text-decoration: none;
+            text-align: left;
+            text-transform: unset;
+        }
+
+        .sidebar a:hover {
+            background-color: rgb(211, 134, 147);
+        }
+
+        /* Main content styles */
+        /* yang bertuliskan welcme */
+        .main-content {
+            margin-left: 210px;
+            padding: 20px;
+        }
+
+        h1, h2, p {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Georgia', serif; /* jenis huruf yang akan digunakan georgia adalah nama font utama */
+            text-transform: uppercase; /* mengubah semua huruf dalam teks menjadi huruf besar */
+            letter-spacing: 2px; /* jarak antara huruf */
+            text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5); /* menambahkan bayangan pada teks. 5px 5px adalah offset bayangan secara horizontal dan vertikal, 4px adalah tingkat blur, dan rgba(0, 0, 0, 0.5) menentukan warna bayangan hitam dengan transparansi 50%. Bayangan ini memberikan efek 3D */  
+            color: rgb(15, 13, 13);
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-transform: inherit;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5) ;
+            text-align: center;
+            color: rgb(15, 13, 13);
+
+        }
+
+        h3 {
+            color: rgb(173, 84, 84);
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color:  rgb(99, 73, 77);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
